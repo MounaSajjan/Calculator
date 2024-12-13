@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="icons8-calculator-100.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" id="finalResult" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="displayValue('7')" />
+            <input type="button" value="8" onclick="displayValue('8')" />
+            <input type="button" value="9" onclick="displayValue('9')" />
+            <input type="button" value="DEL" id="delete" onclick="del()" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="displayValue('4')" />
+            <input type="button" value="5" onclick="displayValue('5')" />
+            <input type="button" value="6" onclick="displayValue('6')" />
+            <input
+              type="button"
+              value="+"
+              class="operator"
+              onclick="displayValue('+')" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="displayValue('1')" />
+            <input type="button" value="2" onclick="displayValue('2')" />
+            <input type="button" value="3" onclick="displayValue('3')" />
+            <input
+              type="button"
+              value="-"
+              class="operator"
+              onclick="displayValue('-')" />
+          </div>
+          <div>
+            <input type="button" value="." onclick="displayValue('.')" />
+            <input type="button" value="0" onclick="displayValue('0')" />
+            <input
+              type="button"
+              value="/"
+              onclick="displayValue('/')"
+              class="operator" />
+            <input
+              type="button"
+              value="*"
+              class="operator"
+              onclick="displayValue('*')" />
+          </div>
+          <div class="res">
+            <input
+              type="button"
+              value="RESET"
+              id="reset"
+              onclick="clearScreen()" />
+            <input
+              type="button"
+              value="RESULT"
+              id="result"
+              onclick="calculate()" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
